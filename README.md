@@ -4,8 +4,6 @@ A simple backend API for submitting and retrieving confessions, built with **Pyt
 
 This project was created to practice backend API design, database interactions, and data lifecycle management (including automatic expiration of records).
 
----
-
 ## Features
 
 - Submit confessions with an associated confessor name
@@ -17,16 +15,12 @@ This project was created to practice backend API design, database interactions, 
 
 > Note: While the app allows users to submit confessions freely, it is **not fully anonymous**, as a confessor name is stored along with each confession.
 
----
-
 ## Tech Stack
 
 - **Python**
 - **FastAPI**
 - **MongoDB**
 - **PyMongo**
-
----
 
 ## Data Model (Overview)
 
@@ -38,8 +32,6 @@ Each document stores:
 
 Confessions are automatically removed after a predefined duration using MongoDB’s TTL index feature.
 
----
-
 ## Why This Project?
 
 This project was built to:
@@ -47,8 +39,6 @@ This project was built to:
 - Learn how MongoDB handles insert and update acknowledgements
 - Understand TTL indexes and data expiration
 - Practice reading and understanding library source code and documentation instead of relying on tutorials
-
----
 
 ## Running Locally
 
@@ -59,7 +49,8 @@ This project was built to:
    ```
 2. Install dependencies
    ```bash
-   pip install -r requirements.txt```
+   pip install -r requirements.txt
+   ```
 3. Ensure MongoDB is running
 4. Run the API code
 
