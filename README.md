@@ -55,7 +55,8 @@ This project was built to:
 1. Clone the repository  
    ```bash
    git clone <repo-url>
-   cd <repo-name>```
+   cd <repo-name>
+   ```
 2. Install dependencies
    ```bash
    pip install -r requirements.txt```
