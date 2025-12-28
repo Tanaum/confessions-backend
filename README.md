@@ -1,6 +1,6 @@
 # Confessions API
 
-A simple backend API for submitting and retrieving confessions, built with **Python**, **FastAPI**, and **MongoDB**.
+A simple backend API for submitting and retrieving confessions, built with **Python**, **Flask**, and **MongoDB**.
 
 This project was created to practice backend API design, database interactions, and data lifecycle management (including automatic expiration of records).
 

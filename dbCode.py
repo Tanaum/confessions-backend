@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import datetime
-import socket
 
 global CONFESSION_LIMIT
 CONFESSION_LIMIT = 5
@@ -17,18 +16,16 @@ db = client['Confessions']
 collection = db['Confessions']
 
 # STORE NEW CONFESSION
-def StoreNewConfession(ConfessorName, ConfessionData):
+def StoreNewConfession(ConfessorName, ConfessionData, IP):
     global CONFESSION_LIMIT
-    hostname = socket.gethostname()
-    IPAddr = socket.gethostbyname(hostname)
 
-    query = {"_id":IPAddr}
+    query = {"_id":IP}
     doc = collection.find_one(query)
 
     if doc == None:
         current_time = datetime.datetime.now(datetime.timezone.utc)
         data = {
-            "_id": IPAddr,
+            "_id": IP,
             "timestamp" : current_time,
             "ConfessorName" : ConfessorName,
             "ConfessionData" : {
