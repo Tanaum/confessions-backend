@@ -75,6 +75,3 @@ def StoreNewConfession(ConfessorName, ConfessionData):
 def RetrieveConfessions():
     data = collection.find()
     return list(data)
-
-StoreNewConfession("Girl In Red", "There's a reason I love fall ;)")
-StoreNewConfession("Nadia","SHE LIKE A BOY. IM NOT A BOY.")
