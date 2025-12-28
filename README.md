@@ -18,7 +18,7 @@ This project was created to practice backend API design, database interactions, 
 ## Tech Stack
 
 - **Python**
-- **FastAPI**
+- **Flask**
 - **MongoDB**
 - **PyMongo**
 
@@ -35,7 +35,7 @@ Confessions are automatically removed after a predefined duration using MongoDBâ
 ## Why This Project?
 
 This project was built to:
-- Explore FastAPI beyond basic CRUD operations
+- Explore Flask beyond basic CRUD operations
 - Learn how MongoDB handles insert and update acknowledgements
 - Understand TTL indexes and data expiration
 - Practice reading and understanding library source code and documentation instead of relying on tutorials
