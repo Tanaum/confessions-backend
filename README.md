@@ -51,8 +51,14 @@ This project was built to:
    ```bash
    pip install -r requirements.txt
    ```
-3. Ensure MongoDB is running
-4. Run the API code
+3. Set up your `.env` file with your MongoDB URI
+```
+   MONGO_URI=your_mongodb_connection_string
+```
+4. Run the API
+```bash
+   python main.py
+```
 
 ## Disclaimer
 This project is for educational purposes and backend experimentation.
